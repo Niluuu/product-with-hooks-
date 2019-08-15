@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #eee; 
+}
+
+.content {
+  width: 350px;
+  background: #ffff;
+  height: 100%;
+  padding: 20px;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-row > div {
+  width: 50%;
+  /* padding: 10px; */
+}
+
+.flex-row div img{
+  width: 100px;
+  height: 136px;
+  margin: 0 auto;
+}
+
+.slick-next:before, .slick-prev:before  {
+  display: none;
+  visibility: hidden;
+}
+
+.slick-dots li {
+  width: 0px;
+  height: 4px;
+  padding: 0px 5px;
+}
+
+.slick-dots li button {
+  width: 5px;
+}
+
+.slick-dots li button:before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #2E86C1; 
+  margin: 0px 10px; 
+}
+
+.slick-dots .slick-active  button:before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #2E86C1;  
+}
+
+.rating{
+  padding-bottom: 20px;
+}
+
+.inc-dec-btn {
+  padding: 8px;
+  background: #eee;
+  border: none;  
+  cursor: pointer;
+}
+
+.add-cart {
+  padding: 10px 25px;
+  border: none;
+  background: #2E86C1;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.sizes {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  width: 228px;
+  margin-bottom: 20px;
+}
+
+.check {
+  display: none;
+}
+
+label {
+  padding: 13px 15px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+
+.top-product-row {
+  width: 300px;
+  height: 180px;
+  display: flex;
+  padding: 10px 0px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.top-product {
+  width: 80px;
+  margin-right: 22px;
+}
+
+.top-product .price {
+  padding: 2px;
+  background: #2E86C1;
+  color: #fff;
+  position: relative;
+  border-radius: 3px;
+  margin: 7px 7px;
+  font-size: 12px;
+}
+
+.top-product img {
+  width: 60px;
+  height: 80px;
+  border-radius: 3px;
+}
+
+.small-rating {
+  display: flex;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 4px !important; 
+  border: 30px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff; 
+  height: 2px !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
